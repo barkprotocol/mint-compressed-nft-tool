@@ -1,0 +1,13 @@
+@import "@solana/wallet-adapter-react-ui/styles.css";
+
+.wallet-adapter-button {
+  @apply items-center rounded-lg border border-transparent px-4 py-2.5 text-base font-medium focus:outline-none;
+}
+
+.wallet-adapter-button-trigger {
+  @apply bg-black;
+}
+
+.wallet-adapter-button:not([disabled]):hover {
+  @apply bg-gray-800;
+}

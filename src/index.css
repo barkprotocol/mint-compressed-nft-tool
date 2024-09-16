@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply m-0 h-full bg-gray-100 font-sans antialiased;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  @apply flex min-h-full flex-col font-sans antialiased;
+}
+
+/* Button Base Styles */
+.btn {
+  @apply inline-flex items-center justify-center whitespace-nowrap border border-transparent font-medium focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+/* Button Sizes */
+.btn-xs {
+  @apply rounded-md px-2 py-1.5 text-xs;
+}
+
+.btn-sm {
+  @apply rounded-md px-3 py-2 text-sm;
+}
+
+.btn-md {
+  @apply rounded-md px-3 py-1.5 text-sm;
+}
+
+.btn-lg {
+  @apply rounded-lg px-4 py-2 text-base;
+}
+
+/* Button Colors */
+.btn-black {
+  @apply bg-black text-white shadow hover:bg-gray-800 active:bg-gray-700 focus:ring-gray-500;
+}
+
+.btn-orange {
+  @apply bg-orange-600 text-white shadow-sm hover:bg-orange-700 active:bg-orange-600 focus:ring-orange-500;
+}
+
+.btn-white {
+  @apply bg-white text-gray-700 shadow-sm hover:bg-gray-50 active:bg-gray-100 focus:ring-blue-500;
+}
+
+/* Input Styles */
+input {
+  @apply block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800;
+}
+
+/* Remove spin buttons for number inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-gray-900;
+}
+
+h1 {
+  @apply text-3xl mb-6;
+}
+
+h2 {
+  @apply text-2xl mb-5;
+}
+
+h3 {
+  @apply text-xl mb-4;
+}
+
+h4, h5, h6 {
+  @apply text-lg mb-3;
+}
+
+/* Paragraphs */
+p {
+  @apply mb-4 text-gray-700 leading-relaxed;
+}
+
+/* Links */
+a {
+  @apply text-orange-600 hover:text-orange-700 active:text-orange-800 focus:outline-none focus:ring-2 focus:ring-orange-500;
+}
+
+a:focus {
+  @apply ring-offset-2;
+}
+
+/* Responsive Container */
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Flexbox Utilities */
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-col-center {
+  @apply flex flex-col items-center justify-center;
+}
+
+/* Margin and Padding Utilities */
+.m-auto {
+  @apply mx-auto my-auto;
+}
